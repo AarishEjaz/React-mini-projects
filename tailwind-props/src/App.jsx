@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <h1 className='bg-green-400 mb-4 rounded-xl text-black' >programmingBeast</h1>
-      <Card channel="aarish"/>
+      <Card username="programmingBeast" btnText="click Here"/>
 
     </>
   )
