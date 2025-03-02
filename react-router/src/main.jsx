@@ -5,8 +5,8 @@ import App from './App.jsx'
 import { createBrowserRouter, Route, RouterProvider,createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
 import Home from './components/Home/Home.jsx'
-import About from './components/about/About.jsx'
-import Contact from './components/contact/Contact.jsx'
+import About from './components/About/About.jsx'
+import Contact from './components/Contact/Contact.jsx'
 
 
 //One way of creating router
