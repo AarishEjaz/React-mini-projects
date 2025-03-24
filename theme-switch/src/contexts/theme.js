@@ -6,4 +6,4 @@ export const ThemeContext = createContext({
   lightTheme: () => {},
 });
 
-export const ThemeProvider = ThemeContext.Provider;
+export const ThemeProvider = ThemeContext.Provider
