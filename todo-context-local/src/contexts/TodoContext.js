@@ -1,4 +1,4 @@
-import { todo } from "node:test";
+
 import { createContext, useContext } from "react";
 
 export const TodoContext = createContext({
@@ -12,7 +12,7 @@ export const TodoContext = createContext({
   addTodo: (todo) => {},
   updateTodo: (id,todo) => {},
   deleteTodo: (id) => {},
-  toggleCompleted: (id) => {},
+  toggleComplete: (id) => {},
 });
 
 export const useTodo = () =>{
