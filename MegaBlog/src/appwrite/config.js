@@ -78,6 +78,10 @@ export class Service{
         }
     }
 
+    async getPosts(query){
+
+    }
+
 }
 
 const service = new Service()
