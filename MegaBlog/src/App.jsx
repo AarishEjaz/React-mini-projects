@@ -1,9 +1,12 @@
 import { useState } from 'react'
+import{useDispatch} from 'react-redux'
 
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const[loading,setLoading] = useState(true)
+  const dispatch = useDispatch()
   console.log(import.meta.env.VITE_APPWRITE_URL)
 
   return (
