@@ -11,7 +11,9 @@ function App() {
   console.log(import.meta.env.VITE_APPWRITE_URL)
 
   useEffect(()=>{
-    authService
+    authService.getCurrentUser()
+    .then((userData)=>{})
+    .finally()
   },[])
 
   return (
