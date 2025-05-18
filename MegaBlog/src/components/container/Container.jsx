@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Children } from 'react'
 
-function Container() {
+function Container({children}) {
   return (
-    <div>Container</div>
+    <div className=' s-full max-w-7xl mx-auto px-4'>{children}</div>
   )
 }
 
