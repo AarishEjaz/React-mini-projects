@@ -1,21 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useDispatch, useSelector } from 'react-redux'
 import './App.css'
-import AddTodo from "./components/AddTodo"
-import Todos from './components/Todos'
+import { increment,decrement } from './features/counter/counterSlice'
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
+
+  const count = useSelector((state)=>state.counter.value)
+  const dispatch = useDispatch()
+  function handleIncrement(){
+    dispatch(increment())
+  }
+
+  function handleDecrement(){
+    dispatch(decrement())
+  }
 
   return (
-    <>
-      <h1>Programming Beast </h1>
-      <AddTodo />
-      <Todos />
-
-    </>
+    <div>
+    Hello aarish
+    <h2>Count: {count}</h2>
+      <button onClick={handleIncrement} > + </button>
+      <button onClick={handleDecrement} > - </button>
+    </div>
   )
 }
 
